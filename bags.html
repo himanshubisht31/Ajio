@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="style2.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+    <title>
+      Men's Backpacks Online: Low Price Offer on Backpacks for Men - AJIO
+    </title>
+  </head>
+  <body>
+    <div class="filter">
+      <div id="top">
+        <h1>Refine By</h1>
+        <button id="up" onclick="contract()">
+          <img
+            src="https://www.linkpicture.com/q/up-arrow_1.png"
+            type="image"
+          />
+        </button>
+        <button id="down" onclick="expand()">
+          <img
+            src="https://www.linkpicture.com/q/down-arrow_2.png"
+            type="image"
+          />
+        </button>
+      </div>
+
+      <div class="all">
+        <div class="cat-1">
+          <button id="sub1" onclick="addition1()">-</button>
+          <button id="add1" onclick="subtract1()">+</button>
+
+          <h2>Price</h2>
+
+          <div class="check-1">
+            <input type="checkbox" />
+            <label for="">Below Rs.500 </label><br />
+
+            <input type="checkbox" />
+            <label for="">Rs.500-1000 </label><br />
+
+            <input type="checkbox" />
+            <label for="">Rs.1001-1500 </label><br />
+          </div>
+        </div>
+
+        <div class="cat-2">
+          <button id="sub2" onclick="addition2()">-</button>
+          <button id="add2" onclick="subtract2()">+</button>
+
+          <h2>Brand</h2>
+
+          <div class="check-2">
+            
+            <input type="checkbox" />
+            <label for="">AMERICAN TOURISTER </label><br />
+            
+            <input type="checkbox" />
+            <label for="">PUMA </label><br />
+
+            <input type="checkbox" />
+            <label for="">NIKE </label><br />
+
+            <input type="checkbox" />
+            <label for="">ALTHEORY </label><br />
+
+            <input type="checkbox" />
+            <label for="">Reebok </label><br />
+
+            <input type="checkbox" />
+            <label for="">Skybags </label><br />
+          </div>
+        </div>
+
+        <div class="cat-3">
+          <button id="sub2">-</button>
+          <button id="add2">+</button>
+          <h2>Discount</h2>
+        </div>
+
+        <div class="cat-4">
+          <button id="sub2">-</button>
+          <button id="add2">+</button>
+          <h2>Colors</h2>
+        </div>
+
+                <div class="cat-5">
+          <button id="sub2">-</button>
+          <button id="add2">+</button>
+          <h2>Occasion</h2>
+        </div>
+
+                <div class="cat-5">
+          <button id="sub2">-</button>
+          <button id="add2">+</button>
+          <h2>Size & Fit</h2>
+        </div>
+      </div>
+    </div>
+
+    <div id="products">
+      <div class="heading">
+        <div class="head">
+          <h3>MEN'S</h3>
+          <h1>Backpacks</h1>
+        </div>
+
+        <div class="summary">
+          <p>Backpacks for travel</p>
+          <p>
+            Pack some style with AJIO’s cool collection of backpacks for men .
+            Whether it’s to carry a laptop to work or for convenient luggage for
+            travelling, find the perfect design from backpack brands such as
+            Wildcraft and United Colors of Benetton ,
+          </p>
+        </div>
+      </div>
+
+      <div class="pattern">
+        <div class="listNav">
+          <h2>GRID</h2>
+          <a onclick="three()"
+            ><img src="https://www.linkpicture.com/q/grid_1.png" type="image"
+          /></a>
+          <a onclick=" changeGrid()"
+            ><img src="https://www.linkpicture.com/q/grid3.png" type="image"
+          /></a>
+        </div>
+
+        <div class="sort">
+          <h2>SORT BY</h2>
+
+          <select onchange="selectOpt()" id="opt">
+            <option value="relevance">Relevance</option>
+            <option value="prce-asc">Price (lowest first)</option>
+            <option value="prce-desc">Price (highest first)</option>
+            <option value="discount-desc">Discount</option>
+          </select>
+        </div>
+      </div>
+
+      <div id="list"></div>
+    </div>
+  </body>
+</html>
+
+<script src="bags.js"></script>

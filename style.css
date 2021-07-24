@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#mobi img {
+  width: 100%;
+  transform: scale(1);
+}
+#top_img img {
+  width: 100%;
+  /* transform: scale(1); */
+}
+
+#top_img:hover img {
+  transform: scale(1.03);
+  /* overflow: hidden; */
+  transition: 1s;
+}
+#mobi:hover img {
+  transform: scale(1.03);
+  overflow: hidden;
+  transition: 1s;
+}
+
+#experience img {
+  width: 100%;
+}
+
+#experience:hover img {
+  transform: scale(1.03);
+  overflow: hidden;
+  transition: 1s;
+}
+
+#crazy:hover img {
+  transform: scale(1.03);
+  overflow: hidden;
+  transition: 1s;
+}
+
+#slider_1 img {
+  width: 100%;
+}
+#slider_2 img {
+  width: 100%;
+}
+
+#crazy img {
+  width: 100%;
+}
+
+/* Grid Box */
+
+.gridTiles {
+  /* border: 2px solid red; */
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.3%;
+  overflow: hidden;
+}
+
+.gridTiles a {
+  overflow: hidden;
+}
+
+.gridTiles a:hover img {
+  transform: scale(1.03);
+  transition: 1s;
+
+  /* transform: scale(1.03); */
+}
+
+/* Slider 3 */
+
+#slider_3 {
+  /* border: 2px solid blue; */
+  display: grid;
+  grid-template-columns: repeat(4, 24.5%);
+}
+
+
+
+.slide {
+  position: relative;
+  cursor: pointer;
+}
+
+.slide #left {
+  position: absolute;
+  top: 44%;
+  left: 1.5%;
+  width: 45px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  border: none;
+  box-shadow: 0 4px 6px -3px #9a9a9a;
+}
+
+.slide #right {
+  position: absolute;
+  top: 44%;
+  right: 1.5%;
+  width: 45px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  border: none;
+  box-shadow: 0 4px 6px -3px #9a9a9a;
+}
